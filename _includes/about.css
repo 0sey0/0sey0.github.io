@@ -1,0 +1,39 @@
+.infobox {
+  font-size: 17px;
+  width: 100%;
+  max-width: 480px;
+  padding: 1rem 0.6rem 0 0.6rem;
+  margin: 0 auto;
+}
+.infobox p {
+  line-height: 2rem;
+  font-size: 1rem;
+}
+.infobox b {
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Nanum gothic", sans-serif;
+}
+th, td {
+padding: 15px;
+}
+
+.profile-info {
+ padding: 1rem;
+ position: relative;
+margin: 2rem 0;
+}
+
+.profile-info h2 {
+ font-size: 1rem;
+ font-weight: 600;
+ letter-spacing: 0.2rem;
+ margin-top: 0;
+ margin-bottom: 0.4rem;
+ color: #f63d47;
+}
+
+.profile-info p {
+ line-height: 1.5rem;
+}

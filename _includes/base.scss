@@ -1,0 +1,113 @@
+
+/*
+.scrollmenu {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  display: table-cell;
+  width: 30rem;
+  transform: rotate(90deg);
+  transform-origin: 0;
+  margin-left: calc(50% - 0.14rem);
+  white-space: nowrap;
+}*/
+ .scrollmenu {
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.scrollmenu li {
+  display: inline-block;
+  color: #666666;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0rem 1rem 0rem 1rem;
+  list-style-type: none;
+  font-family: "Open sans";
+}
+.scrollmenu li a {
+  padding: 0rem 0.6rem 0.4rem 0.6rem;
+  color: #666666;
+  text-decoration: none;
+  letter-spacing: 0.5;
+}
+.on {
+  color: #000000 !important;
+  border-bottom: 2px solid #000;
+}
+
+  /* Universal */
+* {
+margin: 0;
+padding: 0;
+box-sizing: inherit;
+}
+html {
+box-sizing: border-box;
+background-color: ivory;
+}
+body {
+font-size: 20px;
+font-family: 'Open Sans', sans-serif;
+max-width: 980px;
+margin: 0 auto;
+}
+
+header {
+margin: 2rem 0px; 
+}
+
+.navbar {
+display: inline-block;
+width: 100%;
+}
+
+.textLogo {
+text-transform: uppercase;
+color: #000;
+font-size: 3rem;
+text-align: center;
+}
+
+.parent {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 615px) {}
+
+@media screen and (min-width: 616px) {
+       .cardLayout .card:nth-child(4n-3) {
+  width: calc(60% - 12px);
+      }
+      .cardLayout .card:nth-child(4n-2) {
+  width: calc(40% - 12px);
+      }
+      .cardLayout .card:nth-child(4n-1) {
+  width: calc(40% - 12px);
+      }
+      .cardLayout .card:nth-child(4n) {
+  width: calc(60% - 12px);
+      }
+}
+.timelinecon h2 {
+ margin-bottom: 1rem;
+}
+
+.thumbcon{
+  height: 190px;
+  width: 340px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  margin: 0.9rem 0;
+}
