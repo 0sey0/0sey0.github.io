@@ -1,106 +1,32 @@
 ---
 layout: pages
-permalink: /portfolio
+title: "Oh Se Young"
+permalink: "/portfolio/"
 ---
-
-<style>
-  {% include portfolio.css %}
-</style>
 
 <div class="container">
 
+  {% for entry in site.data.portfolio %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+  {% if thecycle == 'odd' %}
   <div class="timeline-block timeline-block-right">
-     <div class="marker"></div>
-     <span>2022</span>
-     <div class="timelinecon timeline-content">
-        <h3>My Rocket Ship</h3>
-        <span>Web Drama</span>
-        <a href="https://www.youtube.com/watch?v=VIR_HJYu9J0"><div class="thumbcon" style="background-image:url(https://img.youtube.com/vi/x-PlycQpEXQ/hqdefault.jpg)"></div></a>
-       <div>Kim Jae Hee</div>
-       </div>
-  </div>
-
+  {% else %}
   <div class="timeline-block timeline-block-left">
+  {% endif %}
      <div class="marker"></div>
-     <span>2022</span>
-     <div class="timelinecon timeline-content">
-        <h3>Thirty Nine</h3>
-        <span>Drama</span>
-        <a href="https://www.youtube.com/watch?v=b4qpxbxife"><div class="thumbcon" style="background-image:url(https://img.youtube.com/vi/b4qPx_BXiFE/hqdefault.jpg)"></div></a>
-      <div>Cho Hye Jin</div>
+     <div class="timeline-content">
+        <h3>{{ entry.name }}</h3>
+        <a href="{{ entry.link }}">
+          <div class="thumbcon" style="background-image:url({{ entry.img }})"></div>
+          </a>
+        <p>      {{ entry.description }}    </p>
      </div>
-  </div>
+    </div>
+  {% endfor %}
+    </div>
 
-  <div class="timeline-block timeline-block-right">
-     <div class="marker"></div>
-     <span>2019</span>
-     <div class="timelinecon timeline-content">
-        <h3>VIP</h3>
-        <span>Drama</span>
-        <a href="https://youtu.be/huZZi61Hhm0?t=1175"><div class="thumbcon" style="background-image:url(https://img.youtube.com/vi/huZZi61Hhm0/hqdefault.jpg)"></div></a>
-      <div>Han So Mi</div>
-     </div>
-  </div>
-  
-  <div class="timeline-block timeline-block-left">
-     <div class="marker"></div>
-     <span>2019</span>
-     <div class="timelinecon timeline-content">
-        <h3>Cat Bartender</h3>
-        <span>Web Drama</span>
-        <a href="https://www.youtube.com/watch?v=xhvU__fh6tA"><div class="thumbcon" style="background-image:url(https://img.youtube.com/vi/xhvU__fh6tA/hqdefault.jpg)"></div></a>
-      <div>----</div>
-     </div>
-     </div>
-     <div class="timeline-block timeline-block-right">
-        <div class="marker"></div>
-        <span>2019</span>
-        <div class="timelinecon timeline-content">
-           <h3>Dating Class</h3>
-           <span>Web Drama</span>
-           <a href="https://www.youtube.com/watch?v=8j6v4bA0ypw"><div class="thumbcon" style="background-image:url(https://img.youtube.com/vi/8j6v4bA0ypw/hqdefault.jpg)"></div></a>
-         <div>Cha Juwon</div>
-        </div>
-  </div>
-  <div class="timeline-block timeline-block-left">
-     <div class="marker"></div>
-     <span>2018</span>
-     <div class="timelinecon timeline-content">
-        <h3>Your imagination becomes a reality</h3>
-        <span>Web Drama</span>
-        <a href="https://www.youtube.com/watch?v=d9hJ5BKe8Aw"><div class="thumbcon" style="background-image:url(https://img.youtube.com/vi/d9hJ5BKe8Aw/hqdefault.jpg)"></div></a>
-      <div>Lee So Ram</div>
-     </div>
-</div>
-<div class="timeline-block timeline-block-right">
-  <div class="marker"></div>
-  <span>2018</span>
-  <div class="timelinecon timeline-content">
-     <h3>Cat's Taste</h3>
-     <span>Web Drama</span>
-     <a href="https://www.youtube.com/watch?v=gtHjXuI3xpk"><div class="thumbcon" style="background-image:url(https://img.youtube.com/vi/gtHjXuI3xpk/hqdefault.jpg)"></div></a>
-   <div>----</div>
-  </div>
-</div>
-<div class="timeline-block timeline-block-left">
-  <div class="marker"></div>
-  <span>2018</span>
-  <div class="timelinecon timeline-content">
-     <h3>Beauty Inside</h3>
-     <span>Web Drama</span>
-     <a href="#"><div class="thumbcon" style="background-image:url(https://unsplash.it/320/180?random)"></div></a>
-   <div>Joo Ga Young</div>
-  </div>
-</div>
-<div class="timeline-block timeline-block-right">
-  <div class="marker"></div>
-  <span>2018</span>
-  <div class="timelinecon timeline-content">
-     <h3>There was no one 100 years later</h3>
-     <span>Short Film</span>
-     <a href="https://movie.naver.com/movie/bi/mi/scriptAndRelate.naver?code=187638"><div class="thumbcon" style="background-image:url(https://i.pinimg.com/564x/6e/f9/d2/6ef9d2ad3becdba08803def6e0d686f9.jpg)"></div></a>
-   <div>----</div>
-  </div>
-</div>
 
-</div>
+    <style>    /*{{ site.baseurl }}/assets/{{ entry.img }}*/
+    
+      {% include portfolio.css %}
+    </style>

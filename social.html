@@ -71,54 +71,30 @@ permalink: /social
     <a class="viewstagram" href="https://www.instagram.com/p/CcC4uaFLeWs/">View on Instagram</a>
     </div>
   </div>
-
   <div class="tab__content">
-    <article>
-   <iframe height="315" src="https://www.youtube.com/embed/tkUenvihJNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- </article>
+    
+    {% for yt in site.data.youtube %}
+    <article class="container">
+      <iframe class="responsive-iframe" src="{{ yt.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
+     {% endfor %}
   </div>
 
   <div class="tab__content">
    <section class="blogs">
+    {% for entry in site.data.blogs %}
+    <figure class="thumbcon" style="background-image:url({{ entry.img }})">
      <div class="post-list-item">
         <div class="post-list-item-date">
-           <time>26 Feb 2022</time>
+           <time>{{ entry.date }}</time>
         </div>
         <div class="post-list-item-title">
-           <a href="/blog/2022/02/26/ai-rules-and-ethics/">
-           AI Ethics and Rules
-           </a>
+           <a href="{{ entry.link }}">{{ entry.name }}</a>
         </div>
-        <div class="post-list-item-desc">
-           Madness is like Gravity
-        </div>
+        <div class="post-list-item-desc">{{ entry.excerpt }}</div>
      </div>
-     <div class="post-list-item">
-        <div class="post-list-item-date">
-           <time>20 Apr 2022</time>
-        </div>
-        <div class="post-list-item-title">
-           <a href="/blog/2022/02/26/ai-rules-and-ethics/">
-             Madness is like Gravity
-           </a>
-        </div>
-        <div class="post-list-item-desc">
-           All it needs a little push.
-        </div>
-     </div>
-     <div class="post-list-item">
-        <div class="post-list-item-date">
-           <time>19 Apr 2022</time>
-        </div>
-        <div class="post-list-item-title">
-           <a href="/blog/2022/02/26/ai-rules-and-ethics/">
-           AI Ethics and Rules
-           </a>
-        </div>
-        <div class="post-list-item-desc">
-           Madness is like Gravity
-        </div>
-     </div>
+     </figure>
+     {% endfor %}
   </section>
   </div>
 

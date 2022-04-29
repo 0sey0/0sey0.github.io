@@ -1,14 +1,4 @@
-###########
-# site.title
-
-title: Oh Se Young
-description: Actor
-url: "/"
-#host: 0.0.0.0
-
-
-#########################
-# more settings
+title: Oh Seyoung
 
 markdown: kramdown
 
@@ -21,13 +11,11 @@ compress_html:
   ignore:
     envs: []
 
-#sass:
-#  sass_dir: css
-#  style:    compressed
-
-baseurl: ""
 permalink: pretty
-
+paginate: 12
 exclude:
 - README.md
-- LICENSE.md
+
+plugins: [jekyll-paginate, kramdown]
+# Build settings
+markdown: kramdown
