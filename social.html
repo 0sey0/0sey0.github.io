@@ -18,9 +18,6 @@ permalink: /social
   <input type="radio" id="tab2" name="tabGroup1" class="tab">
   <label for="tab2">YouTube</label>
 
-  <input type="radio" id="tab3" name="tabGroup1" class="tab">
-  <label for="tab3">Blogs</label>
-
   <div class="tab__content">
   <div class="slidercontainer">
     <div class="posthead">
@@ -80,22 +77,5 @@ permalink: /social
      {% endfor %}
   </div>
 
-  <div class="tab__content">
-   <section class="blogs">
-    {% for entry in site.data.blogs %}
-    <figure class="thumbcon" style="background-image:url({{ entry.img }})">
-     <div class="post-list-item">
-        <div class="post-list-item-date">
-           <time>{{ entry.date }}</time>
-        </div>
-        <div class="post-list-item-title">
-           <a href="{{ entry.link }}">{{ entry.name }}</a>
-        </div>
-        <div class="post-list-item-desc">{{ entry.excerpt }}</div>
-     </div>
-     </figure>
-     {% endfor %}
-  </section>
-  </div>
 
 </div>

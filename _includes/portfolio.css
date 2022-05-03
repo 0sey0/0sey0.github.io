@@ -11,8 +11,8 @@
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -1px;
-    width: 2px;
+    margin-left: -2px;
+    width: 4px;
     height: 100%;
     background: #CCD1D9;
     z-index: 1
@@ -57,7 +57,7 @@
  }
  
  .timeline-content {
-    width: 95%;
+    width: 100%;
     padding: 0 15px;
     color: #666
  }
@@ -79,13 +79,14 @@
     line-height: 1.5em;
     word-spacing: 1px;
     color: #888;
+    font-weight: bold;
  }
  
  
  @media screen and (max-width: 768px) {
     
  .thumbcon {
-     height: calc(44vw - 0px);
+     height: calc(46vw - 0px);
      width: 100%;
      background-position: center;
      background-size: cover;
@@ -94,19 +95,32 @@
      margin: 0.9rem 0;
  }
     .container:before {
-       left: 8px;
+       left: 12px;
        width: 2px;
     }
     .timeline-block {
-       width: 100%;
+       width: 95%;
        margin-bottom: 30px;
     }
     .timeline-block-right {
        float: none;
     }
- 
     .timeline-block-left {
        float: none;
        direction: ltr;
     }
+  
+ .timeline-content {
+    width: 95%;
+ }
+ .marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: #4FC1E9;
+    margin-top: 10px;
+    margin-left: 3px;
+    z-index: 9999
+ }
  }

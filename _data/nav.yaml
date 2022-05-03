@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+
+- name: News
+  link: /news
+
+- name: Portfolio
+  link: /portfolio
+
+- name: About
+  link: /about
+
+- name: Social
+  link: /social

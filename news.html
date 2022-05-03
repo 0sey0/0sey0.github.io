@@ -6,48 +6,19 @@ permalink: /news
 <style>
   {% include news.css %}
 </style>
-<section class="articles">
-  {% for post in paginator.posts%}
-  <div class="post-list-item">
-        <div class="post-list-item-date">
-          <time>{{ post.date | date_to_string }}</time>
-        </div>
-        <div class="post-list-item-title">
-          {% if post.link %}
-          <a href="{{ post.link }}">
-          {% else %}
-          <a href="{{ post.url | prepend: site.baseurl }}">
-          {% endif %}
-          {{ post.title }}
-        </a>
-        </div>
-        {% if post.description %}
-        <div class="post-list-item-desc">
-          {{ post.description }}
-        </div>
-        {% endif %}
-    </div>
-    {% endfor %}
-  </section>
-    {% if paginator.total_pages > 1 %}
-      <nav class="pagination">
-        {% if paginator.previous_page %}
-          <a class="paginationLink" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-        {% endif %}
-  
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <em class="paginationLink paginationLinkCurrent">{{ page }}</em>
-        {% elsif page == 1 %}
-          <a class="paginationLink" href="/">{{ page }}</a>
-        {% else %}
-          <a class="paginationLink" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
-  
-      {% if paginator.next_page %}
-        <a class="paginationLink" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-      {% endif %}
-      </nav>
-    {% endif %}
-  
+
+<section class="blogs">
+  {% for entry in site.data.blogs %}
+  <figure class="thumbcon" style="background-image:url({{ entry.img }})">
+   <div class="post-list-item">
+      <div class="post-list-item-date">
+         <time>{{ entry.date }}</time>
+      </div>
+      <div class="post-list-item-title">
+         <a href="{{ entry.link }}">{{ entry.name }}</a>
+      </div>
+      <div class="post-list-item-desc">{{ entry.excerpt }}</div>
+   </div>
+   </figure>
+   {% endfor %}
+</section>

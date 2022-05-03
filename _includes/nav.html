@@ -1,9 +1,11 @@
 <nav style="overflow: hidden;height: 4rem;">
    <ul class="scrollmenu">
-   <li><a href="/">Home</a></li>
-   <li><a href="/news">News</a></li>
-   <li><a href="/about">About</a></li>
-   <li><a href="/portfolio" class="on">Portfolio</a></li>
-   <li><a href="/social">Social</a></li>
+      {%- for item in site.data.nav %}
+   <li>
+      <a href="{{ item.link | relative_url }}" {% if item.link == page.url %}class="on" {% endif %}>
+          {{ item.name }}
+      </a>
+  </li>
+  {% endfor -%}
 </ul>
 </nav>
