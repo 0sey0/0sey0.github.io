@@ -8,9 +8,11 @@ permalink: /news
 </style>
 
 <section class="blogs">
-  {% for entry in site.data.blogs %}
-  <figure class="thumbcon" style="background-image:url({{ entry.img }})">
-   <div class="post-list-item">
+   
+  {% for entry in site.data.news %}
+  <article class="flexy">
+      <div class="piccon" style="background-image:url({{ entry.img }})"></div>
+      <div class="post-list-item">
       <div class="post-list-item-date">
          <time>{{ entry.date }}</time>
       </div>
@@ -18,7 +20,8 @@ permalink: /news
          <a href="{{ entry.link }}">{{ entry.name }}</a>
       </div>
       <div class="post-list-item-desc">{{ entry.excerpt }}</div>
-   </div>
-   </figure>
+      </div>
+   </article>
    {% endfor %}
+   
 </section>

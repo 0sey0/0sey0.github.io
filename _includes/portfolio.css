@@ -1,9 +1,10 @@
 
  .container {
-     padding: 0 0 50px 0;
-     margin: 3rem auto;
+     padding: 0 0 50px 0;/*
+     margin: 3rem auto;*/
      position: relative;
      overflow: hidden;
+     background-color: beige;
  }
  
  .container:before {

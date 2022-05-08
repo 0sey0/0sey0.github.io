@@ -2,8 +2,8 @@ svg {
   width: 3rem;
   height: 3rem;
   stroke: #fff;
-  fill: #fff;
-  filter: drop-shadow(0 0 0.75rem #444);
+  fill: #fff;/*
+  filter: drop-shadow(0 0 0.75rem #444);*/
 }
 
 body {
@@ -53,7 +53,7 @@ a:visited {
 
 a:hover,
 a:visited:hover {
-	color: yellow;
+	color: rgb(25, 0, 255);
 }
 
 a.active {
@@ -350,52 +350,6 @@ html {
 	background-size: cover;
   background-blend-mode: hard-light;
 }/*#585858*/
- .section.section--intro {
-   background-color: white;
-   color: #555;
- }
- .section.section--about {
-   background-color: #de5f5f;
-   color: white;
- }
- .section.section--about svg {
-   fill: #de5f5f;
- }
- .section.section--clients {
-   background-color: #343436;
-   color: white;
- }
- .section.section--clients svg {
-   fill: #343436;
- }
- .section.section--portfolio {
-   background-color: orange;
-   color: white;
- }
- .section.section--portfolio svg {
-   top: -20px;
-   fill: orange;
- }
- .section.section--portfolio svg.bottom {
-   top: auto;
-   bottom: -50px;
- }
- .section.section--portfolio1 {
-   background-color: #3A99D8;
-   color: white;
- }
- .section.section--portfolio1 svg {
-   top: -50px;
-   fill: #3A99D8;
- }
- .section.section--pepperhill svg {
-   top: -50px;
-   fill: #3A99D8;
- }
- .section.section--contact svg {
-   fill: white;
- }
- 
  /**
   * Typo
   */
@@ -486,3 +440,8 @@ html {
    color: #343436;
    opacity: 0.7;
  }
+ .insta, .yt {
+   border-radius: 6px;
+background: linear-gradient(270deg, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink, red, pink);
+ }
+ 

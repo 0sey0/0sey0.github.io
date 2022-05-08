@@ -3,79 +3,11 @@ layout: pages
 permalink: /social
 ---
 <style>
-{% include social.css %}
+{% include knetz.css %}
 </style>
 
-{% include social.js %}
-
-
-<div class="tab-wrap">
-
-  <!-- active tab on page load gets checked attribute -->
-  <input type="radio" id="tab1" name="tabGroup1" class="tab" checked="">
-  <label for="tab1">Instagram</label>
-
-  <input type="radio" id="tab2" name="tabGroup1" class="tab">
-  <label for="tab2">YouTube</label>
-
-  <div class="tab__content">
-  <div class="slidercontainer">
-    <div class="posthead">
-     <table>
-       <tr>
-       <td>
-         <img src="https://unsplash.it/50/50?random">
-       </td>
-       <td>0sey0</td>
-       </tr>
-     </table>
-     <div class="postops">
-       <span><svg color="#262626" fill="#262626" role="img" viewBox="0 0 24 24" width="30" height="30"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg></span>
-     </div>
-    </div>
-    <div class="showSlide fade" style="display: block;"> 
-      <p style="text-align: center;"><img src="https://unsplash.it/800/600?random" /></p>  
-    </div>  
-    <div class="showSlide fade"> 
-      <p style="text-align: center;"><img src="https://unsplash.it/1000/800?random" /></p>  
-    </div>  
-    <div class="showSlide fade"> 
-      <p style="text-align: center;"><img src="https://unsplash.it/800/400?random" /></p>  
-    </div>  
-    <div class="showSlide fade"> 
-      <p style="text-align: center;"><img src="https://unsplash.it/600/400?random" /></p>  
-    </div>  
-    <div class="showSlide fade"> 
-      <p style="text-align: center;"><img src="https://unsplash.it/400/400?random" /></p>  
-    </div>  
-    <div class="carousel__nav">
-     <span id="moveLeft" class="carousel__arrow left" onclick="nextSlide(-1)">
-          <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-  </svg>
-      </span>
-      <span id="moveRight" class="carousel__arrow right" onclick="nextSlide(1)">
-        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
-    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-  </svg>    
-      </span>
-    </div>
-    <div class="postfoot">
-      <div class="caption">This is a caption that has some meaning</div>
-      <div class="hashtags"><a>#hashtag</a><a>#taghash</a></div>
-      <div class="datetime">19-04-2022</div>
-    </div>
-    <a class="viewstagram" href="https://www.instagram.com/p/CcC4uaFLeWs/">View on Instagram</a>
-    </div>
-  </div>
-  <div class="tab__content">
-    
     {% for yt in site.data.youtube %}
     <article class="container">
       <iframe class="responsive-iframe" src="{{ yt.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </article>
      {% endfor %}
-  </div>
-
-
-</div>
