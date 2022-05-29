@@ -1,9 +1,10 @@
-
-  .container {
+.container {
    position: relative;
    overflow: hidden;
-   width: 100%;
+   width: 75%;
+   margin: 0 auto;
    padding-top: 56.25%;
+   margin: 1rem auto;
 }
 .responsive-iframe {
  position: absolute;

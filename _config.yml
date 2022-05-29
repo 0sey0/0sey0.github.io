@@ -15,6 +15,8 @@ permalink: pretty
 paginate: 12
 exclude:
 - README.md
+- _site
+- .jekyll-cache
 
 plugins: [jekyll-paginate, kramdown]
 # Build settings

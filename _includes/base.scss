@@ -101,15 +101,14 @@ text-align: center;
 .timelinecon h2 {
  margin-bottom: 1rem;
 }
-
 .piccon {
-  height: 190px;
+  height: 160px;
   max-width: 20vw !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
-  margin: 0.9rem;
+  margin: 1.3rem 0;
   width: 100%;
 }
 .thumbcon{
@@ -267,7 +266,7 @@ footer {
 	display: block
 }
 
-h3 {color: orange;}
+h3 {color: #535353;}
 .pagination a {color: blueviolet;font-weight: bold;}
 .coverimg {width: 100px;float: left;padding: 4px 8px 4px 0px;}
 

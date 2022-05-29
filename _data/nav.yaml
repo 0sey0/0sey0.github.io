@@ -1,11 +1,14 @@
 - name: Home
   link: /
 
-- name: News
-  link: /news
+- name: Blog
+  link: /blog
 
 - name: Portfolio
   link: /portfolio
+
+- name: News
+  link: /news
 
 - name: About
   link: /about

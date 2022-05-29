@@ -1,6 +1,6 @@
 ---
 layout: pages
-permalink: /news
+permalink: /blog
 ---
 
 <style>
@@ -9,8 +9,9 @@ permalink: /news
 
 <section class="blogs">
    
-  {% for entry in site.data.news %}
+  {% for entry in site.data.ps %}
   <article class="flexy">
+      <div class="piccon" style="background-image:url({{ entry.img }})"></div>
       <div class="post-list-item">
       <div class="post-list-item-date">
          <time>{{ entry.date }}</time>

@@ -34,8 +34,31 @@ a {
    font-weight: 600;
    line-height: 2.4rem;
 }
+.post-list-item-title a {
+   color: blue;
+}
 .post-list-item-desc {
    color: #343a40;
    margin-bottom: 0.25rem;
    font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+   .flexy {
+      flex-direction: column;
+   }
+   .post-list-item {
+      margin-bottom: 1.6rem;
+      padding: 0;
+   }
+   .piccon {
+      height: 160px;
+      max-width: 100vw !important;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      margin: 1.3rem 0;
+      width: 100%;
+  }
 }
