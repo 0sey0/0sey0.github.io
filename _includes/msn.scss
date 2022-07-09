@@ -279,28 +279,30 @@ html {
     padding: 0 0 0 3rem;
     list-style: none;
 }
- .anchornav li {
-   display: block;
- }
- .anchornav li::after {
-   content: "";
-   width: 1.3rem;
-   display: block;
-   height: 2px;
-   background: #555;
- }
+.anchornav li {
+    display: block;
+    width: max-content;
+    padding: 0.8rem 0;
+}
+.anchornav li::after {
+    content: "";
+    width: 3rem;
+    display: block;
+    height: 2px;
+    background: #555;
+}
  .anchornav li:last-child::after {
    display: none;
  }
- .anchornav a {
-   display: block;
-   padding: 0.8rem 0;
-   font-family: "nimbus-sans", sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1.4px;
-   color: inherit;
-   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
- }
+.anchornav a {
+    display: block;
+    font-family: "nimbus-sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    background-color: #ffffff99;
+    color: inherit;
+    transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
  .anchornav a span {
    display: none;
    padding: 0.5em 0 0;
