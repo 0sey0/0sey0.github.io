@@ -1,76 +1,76 @@
 - year: 2022
   name: Blind
-  category: TVN Drama
+  channel: tvn
   description: Baek Jieun
   img: "https://img.youtube.com/vi/PKRaS_MrJG4/hqdefault.jpg"
   link: "https://www.youtube.com/watch?v=PKRaS_MrJG4"
 
 - year: 2022
   name: My Rocket Ship
-  category: Web Drama
+  channel: vanillasee
   description: Jae Hee
   img: "https://img.youtube.com/vi/x-PlycQpEXQ/hqdefault.jpg"
   link: "https://www.youtube.com/watch?v=VIR_HJYu9J0"
 
 - year: 2022
   name: Thirty Nine
-  category: Drama
+  channel: jtbc
   description: Cho Hye Jin
   img: "https://img.youtube.com/vi/b4qPx_BXiFE/hqdefault.jpg"
   link: "https://www.youtube.com/watch?v=b4qpxbxife"
 
 - year: 2019
   name: VIP
-  category: Drama
+  channel: sbs
   description: Han So Mi
   img: "https://img.youtube.com/vi/huZZi61Hhm0/hqdefault.jpg"
   link: "https://youtu.be/huZZi61Hhm0?t=1175"
 
 - year: 2019
   name: Just One Bite | S1 E7
-  category: Web Drama
+  channel: playlist
   description: Ga Ram
   img: "https://img.youtube.com/vi/6zZOhFJeCjo/hqdefault.jpg"
   link: "https://youtu.be/6zZOhFJeCjo?list=PLS--ClexQbQ3JMFcdnKjPiKVsunIIvb2M&t=40"
 
 - year: 2019
   name: Cat Bartender
-  category: Web Drama
+  channel: dadastudio
   description: Jae Hee
   img: "https://img.youtube.com/vi/xhvU__fh6tA/hqdefault.jpg"
   link: "https://www.youtube.com/watch?v=xhvU__fh6tA"
 
 - year: 2019
   name: Dating Class
-  category: Web Drama
+  channel: tvn
   description: Cha Juwon
   img: "https://img.youtube.com/vi/8j6v4bA0ypw/hqdefault.jpg"
   link: "https://www.youtube.com/watch?v=8j6v4bA0ypw"
 
 - year: 2018
   name: Your imagination becomes a reality
-  category: Web Drama
+  channel: ykicky
   description: Lee Soram
   img: "https://img.youtube.com/vi/d9hJ5BKe8Aw/hqdefault.jpg"
   link: "https://www.youtube.com/watch?v=d9hJ5BKe8Aw"
 
 - year: 2018
   name: Cat's Taste
-  category: Web Drama
+  channel: dadastudio
   description: Jae Hee
   img: "https://img.youtube.com/vi/gtHjXuI3xpk/hqdefault.jpg"
   link: "https://www.youtube.com/watch?v=gtHjXuI3xpk"
 
 - year: 2018
   name: Beauty Inside
-  category: Web Drama
+  channel: jtbc
   description: Joo Ga Young
   img: "https://i.pinimg.com/564x/0a/a1/df/0aa1df803704db661b690f58f377ef27.jpg"
   link: "https://www.viki.com/tv/36421c-beauty-inside"
 
 - year: 2018
   name: There was no one 100 years later
-  category: Web Drama
+  channel: Web Drama
   description: ---
   img: "https://i.pinimg.com/564x/6e/f9/d2/6ef9d2ad3becdba08803def6e0d686f9.jpg"
   link: "https://movie.naver.com/movie/bi/mi/scriptAndRelate.naver?code=187638"

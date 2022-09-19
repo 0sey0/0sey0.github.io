@@ -4,7 +4,6 @@
      margin: 3rem auto;*/
      position: relative;
      overflow: hidden;
-     background-color: beige;
  }
  
  .container:before {
@@ -64,7 +63,7 @@
  }
  
  .timeline-content h3 {
-    margin-top: 5px;
+    margin-top: -8px;
     margin-bottom: 5px;
     font-size: 28px;
     font-weight: 500
@@ -82,7 +81,10 @@
     color: #888;
     font-weight: bold;
  }
- 
+ .channel {
+   width: auto;
+   height: 18px;
+ }
  
  @media screen and (max-width: 768px) {
     
