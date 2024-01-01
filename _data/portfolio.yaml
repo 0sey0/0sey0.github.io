@@ -2,8 +2,8 @@
   name: The Third Marriage
   channel: mbc
   description: Kang SaeRan
-  img: ""
-  link: ""
+  img: "https://img.youtube.com/vi/3QXq2Vik9S8/hqdefault.jpg"
+  link: "https://www.youtube.com/playlist?list=PLKGrX96Q1q7oJjwBfkl6BsH910u16I-Fa"
   
 - year: 2022
   name: Blind
@@ -77,7 +77,7 @@
 
 - year: 2018
   name: There was no one 100 years later
-  channel: Web Drama
+  channel: WebDrama
   description: ---
   img: "https://i.pinimg.com/564x/6e/f9/d2/6ef9d2ad3becdba08803def6e0d686f9.jpg"
   link: "https://movie.naver.com/movie/bi/mi/scriptAndRelate.naver?code=187638"
